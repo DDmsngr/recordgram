@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+﻿import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Home } from './pages/Home'
 import { Waitlist } from './pages/Waitlist'
 import { Bloggers } from './pages/Bloggers'

@@ -79,7 +79,7 @@ export function Bloggers() {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              style={{ fontFamily: 'Unbounded, sans-serif', fontSize: 'clamp(28px, 5vw, 52px)', fontWeight: 900, lineHeight: 1.1, letterSpacing: '-1px', margin: '0 0 20px' }}
+              style={{ fontFamily: 'Russo One, sans-serif', fontSize: 'clamp(28px, 5vw, 52px)', fontWeight: 900, lineHeight: 1.1, letterSpacing: '-1px', margin: '0 0 20px' }}
             >
               <span style={{ color: '#fff' }}>Запусти свой </span>
               <span style={{ color: '#FFD000' }}>батл</span>
@@ -156,7 +156,7 @@ export function Bloggers() {
       <section id="how" style={sectionStyle}>
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
           <Badge label="4 ШАГА" />
-          <h2 style={{ fontFamily: 'Unbounded, sans-serif', fontSize: 'clamp(22px, 4vw, 38px)', fontWeight: 800, margin: '12px 0 8px', color: '#fff' }}>
+          <h2 style={{ fontFamily: 'Russo One, sans-serif', fontSize: 'clamp(22px, 4vw, 38px)', fontWeight: 800, margin: '12px 0 8px', color: '#fff' }}>
             Как работает батл креатора
           </h2>
           <p style={{ color: '#6B7280', fontSize: 14, marginBottom: 36 }}>От идеи до растущего лидерборда — за пару минут.</p>
@@ -170,7 +170,7 @@ export function Bloggers() {
       <section id="benefits" style={sectionStyle}>
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
           <Badge label="ЗАЧЕМ ЭТО КРЕАТОРУ" />
-          <h2 style={{ fontFamily: 'Unbounded, sans-serif', fontSize: 'clamp(22px, 4vw, 38px)', fontWeight: 800, margin: '12px 0 36px', color: '#fff' }}>
+          <h2 style={{ fontFamily: 'Russo One, sans-serif', fontSize: 'clamp(22px, 4vw, 38px)', fontWeight: 800, margin: '12px 0 36px', color: '#fff' }}>
             Выгоды для блогера
           </h2>
         </motion.div>
@@ -199,7 +199,7 @@ export function Bloggers() {
                   flex: '1 1 0', textAlign: 'center', padding: '0 24px',
                   borderRight: i < 2 ? '1px solid rgba(255,255,255,0.08)' : 'none',
                 }}>
-                  <div style={{ fontFamily: 'Unbounded, sans-serif', fontSize: 'clamp(24px, 3vw, 40px)', fontWeight: 900, color: stat.color, marginBottom: 8 }}>
+                  <div style={{ fontFamily: 'Russo One, sans-serif', fontSize: 'clamp(24px, 3vw, 40px)', fontWeight: 900, color: stat.color, marginBottom: 8 }}>
                     {stat.value}
                   </div>
                   <div style={{ color: '#6B7280', fontSize: 13 }}>{stat.label}</div>
@@ -223,7 +223,7 @@ export function Bloggers() {
           style={{ maxWidth: 640, margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: 32 }}>
             <Badge label="ЗАЯВКА В ПЕРВУЮ ВОЛНУ" />
-            <h2 style={{ fontFamily: 'Unbounded, sans-serif', fontSize: 'clamp(22px, 4vw, 38px)', fontWeight: 800, margin: '12px 0 8px', color: '#fff' }}>
+            <h2 style={{ fontFamily: 'Russo One, sans-serif', fontSize: 'clamp(22px, 4vw, 38px)', fontWeight: 800, margin: '12px 0 8px', color: '#fff' }}>
               Забронировать батл
             </h2>
             <p style={{ color: '#6B7280', fontSize: 14 }}>
@@ -236,7 +236,7 @@ export function Bloggers() {
               <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.4 }}
                 style={{ padding: '20px 0', textAlign: 'center' }}>
                 <div style={{ fontSize: 40, marginBottom: 16 }}>🎉</div>
-                <div style={{ color: '#fff', fontSize: 20, fontWeight: 800, fontFamily: 'Unbounded, sans-serif', marginBottom: 8 }}>
+                <div style={{ color: '#fff', fontSize: 20, fontWeight: 800, fontFamily: 'Russo One, sans-serif', marginBottom: 8 }}>
                   Заявка принята!
                 </div>
                 <div style={{ color: '#9CA3AF', fontSize: 14 }}>Мы свяжемся с тобой в течение 14 дней.</div>

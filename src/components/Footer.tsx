@@ -19,7 +19,7 @@ export function Footer() {
                 <polygon points="2,1 11,6 2,11" fill="white" />
               </svg>
             </span>
-            <span style={{ fontFamily: 'Unbounded, sans-serif', fontSize: 15, fontWeight: 700 }}>
+            <span style={{ fontFamily: 'Russo One, sans-serif', fontSize: 15, fontWeight: 700 }}>
               <span style={{ color: '#fff' }}>Record</span>
               <span style={{ color: '#FFD000' }}> gram</span>
             </span>

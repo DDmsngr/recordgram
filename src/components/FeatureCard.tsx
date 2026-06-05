@@ -1,4 +1,4 @@
-import { motion } from 'motion/react'
+﻿import { motion } from 'motion/react'
 import { type ReactNode, useRef, useState } from 'react'
 
 interface FeatureCardProps {

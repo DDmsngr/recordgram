@@ -51,7 +51,7 @@ export function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
             style={{
-              fontFamily: 'Unbounded, sans-serif',
+              fontFamily: 'Russo One, sans-serif',
               fontSize: 'clamp(36px, 6vw, 64px)',
               fontWeight: 900,
               lineHeight: 1.1,
@@ -99,7 +99,7 @@ export function Home() {
             }}>
               <div style={{ color: '#FFD000', fontSize: 11, fontWeight: 700, letterSpacing: 1 }}>ДЛЯ БЛОГЕРОВ</div>
               <div>
-                <div style={{ color: '#fff', fontSize: 20, fontWeight: 800, marginBottom: 8, fontFamily: 'Unbounded, sans-serif', lineHeight: 1.2 }}>
+                <div style={{ color: '#fff', fontSize: 20, fontWeight: 800, marginBottom: 8, fontFamily: 'Russo One, sans-serif', lineHeight: 1.2 }}>
                   Запусти свой батл
                 </div>
                 <div style={{ color: '#6B7280', fontSize: 13, lineHeight: 1.65 }}>
@@ -129,7 +129,7 @@ export function Home() {
             }}>
               <div style={{ color: '#FFD000', fontSize: 11, fontWeight: 700, letterSpacing: 1 }}>ДЛЯ ВСЕХ</div>
               <div>
-                <div style={{ color: '#fff', fontSize: 20, fontWeight: 800, marginBottom: 8, fontFamily: 'Unbounded, sans-serif', lineHeight: 1.2 }}>
+                <div style={{ color: '#fff', fontSize: 20, fontWeight: 800, marginBottom: 8, fontFamily: 'Russo One, sans-serif', lineHeight: 1.2 }}>
                   Лист ожидания
                 </div>
                 <div style={{ color: '#6B7280', fontSize: 13, lineHeight: 1.65 }}>
