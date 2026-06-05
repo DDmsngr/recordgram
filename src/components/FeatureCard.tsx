@@ -2,41 +2,50 @@ import { motion } from 'motion/react'
 import { type ReactNode } from 'react'
 
 interface FeatureCardProps {
+  icon: ReactNode
   title: string
   description: string
-  icon: ReactNode
-  gradient: string
-  delay: number
+  gradient?: string
+  delay?: number
 }
 
-export function FeatureCard({ title, description, icon, gradient, delay }: FeatureCardProps) {
+const DEFAULT_GRADIENT = 'linear-gradient(137deg, #FFD000 0%, #FF9D3C 100%)'
+
+export function FeatureCard({ icon, title, description, gradient = DEFAULT_GRADIENT, delay = 0 }: FeatureCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: 'easeOut', delay }}
-      className="relative flex flex-col justify-start items-start w-full max-w-[260px] md:max-w-[300px] group mx-auto"
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, ease: 'easeOut', delay }}
+      style={{ position: 'relative', width: '100%' }}
     >
-      <div
-        className="absolute w-full h-[260px] md:h-[300px] opacity-60 rounded-[40px] pointer-events-none"
-        style={{ background: gradient, filter: 'blur(45px)' }}
-      />
+      {/* Glow */}
+      <div style={{
+        position: 'absolute', inset: 0,
+        background: gradient,
+        filter: 'blur(40px)',
+        opacity: 0.25,
+        borderRadius: 24,
+        pointerEvents: 'none',
+      }} />
 
-      <div
-        className="relative self-stretch h-[260px] md:h-[300px] rounded-[40px] z-10 overflow-hidden"
-        style={{
-          border: '8px solid transparent',
-          background: `linear-gradient(#1A1A1C, #1A1A1C) padding-box, ${gradient} border-box`,
-        }}
-      >
-        <div className="w-full h-full p-7 flex flex-col justify-between">
-          <div className="text-white/90">{icon}</div>
-          <div>
-            <h3 className="text-white font-medium text-xl mb-3 tracking-tight">{title}</h3>
-            <p className="text-gray-400 text-[14px] leading-[1.6] font-normal selection:bg-white/20">
-              {description}
-            </p>
-          </div>
+      {/* Card */}
+      <div style={{
+        position: 'relative',
+        borderRadius: 20,
+        padding: '24px 22px',
+        border: '1.5px solid transparent',
+        background: `linear-gradient(#14141C, #14141C) padding-box, ${gradient} border-box`,
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 14,
+        height: '100%',
+      }}>
+        <div style={{ fontSize: 26 }}>{icon}</div>
+        <div>
+          <div style={{ color: '#fff', fontSize: 15, fontWeight: 700, marginBottom: 6 }}>{title}</div>
+          <div style={{ color: '#6B7280', fontSize: 13, lineHeight: 1.65 }}>{description}</div>
         </div>
       </div>
     </motion.div>
