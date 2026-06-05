@@ -53,7 +53,7 @@ export function Home() {
             style={{
               fontFamily: 'Exo 2, sans-serif',
               fontSize: 'clamp(36px, 6vw, 64px)',
-              fontWeight: 900,
+              fontWeight: 800,
               lineHeight: 1.1,
               letterSpacing: '-1px',
               margin: '0 0 24px',

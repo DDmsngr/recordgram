@@ -79,7 +79,7 @@ export function Bloggers() {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              style={{ fontFamily: 'Exo 2, sans-serif', fontSize: 'clamp(28px, 5vw, 52px)', fontWeight: 900, lineHeight: 1.1, letterSpacing: '-1px', margin: '0 0 20px' }}
+              style={{ fontFamily: 'Exo 2, sans-serif', fontSize: 'clamp(28px, 5vw, 52px)', fontWeight: 800, lineHeight: 1.1, letterSpacing: '-1px', margin: '0 0 20px' }}
             >
               <span style={{ color: '#fff' }}>Запусти свой </span>
               <span style={{ color: '#FFD000' }}>батл</span>
@@ -185,21 +185,17 @@ export function Bloggers() {
       <section style={sectionStyle}>
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
           <div style={{
-            background: '#16161E', borderRadius: 20, padding: '36px 40px',
+            background: '#16161E', borderRadius: 20, padding: '32px 24px',
             border: '1px solid rgba(255,255,255,0.07)', marginBottom: 20,
-            display: 'flex', justifyContent: 'center',
           }}>
-            <div style={{ display: 'flex', gap: 0, width: '100%', maxWidth: 640 }}>
+            <div className="stats-grid">
               {[
                 { value: '50 слотов', label: 'в мире, в первой волне', color: '#FFD000' },
                 { value: '8–10', label: 'креаторов на страну', color: '#fff' },
                 { value: '14 дней', label: 'и приём закрываем', color: '#EF4444' },
-              ].map((stat, i) => (
-                <div key={stat.value} style={{
-                  flex: '1 1 0', textAlign: 'center', padding: '0 24px',
-                  borderRight: i < 2 ? '1px solid rgba(255,255,255,0.08)' : 'none',
-                }}>
-                  <div style={{ fontFamily: 'Exo 2, sans-serif', fontSize: 'clamp(24px, 3vw, 40px)', fontWeight: 900, color: stat.color, marginBottom: 8 }}>
+              ].map((stat) => (
+                <div key={stat.value} className="stat-item">
+                  <div style={{ fontFamily: 'Exo 2, sans-serif', fontSize: 'clamp(26px, 4vw, 44px)', fontWeight: 800, color: stat.color, marginBottom: 6 }}>
                     {stat.value}
                   </div>
                   <div style={{ color: '#6B7280', fontSize: 13 }}>{stat.label}</div>

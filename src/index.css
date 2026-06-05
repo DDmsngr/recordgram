@@ -31,3 +31,37 @@ html {
   background: #2a2a2a;
   border-radius: 3px;
 }
+
+/* Stats grid responsive */
+.stats-grid {
+  display: flex;
+  width: 100%;
+}
+.stat-item {
+  flex: 1 1 0;
+  text-align: center;
+  padding: 0 24px;
+}
+.stat-item:not(:last-child) {
+  border-right: 1px solid rgba(255,255,255,0.08);
+}
+@media (max-width: 480px) {
+  .stats-grid {
+    flex-direction: column;
+  }
+  .stat-item {
+    padding: 16px 0;
+  }
+  .stat-item:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+}
+
+/* Section padding mobile */
+@media (max-width: 640px) {
+  .section-inner {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}

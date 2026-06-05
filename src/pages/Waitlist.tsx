@@ -83,7 +83,7 @@ export function Waitlist() {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              style={{ fontFamily: 'Exo 2, sans-serif', fontSize: 'clamp(32px, 5vw, 56px)', fontWeight: 900, lineHeight: 1.1, letterSpacing: '-1px', margin: '0 0 20px' }}
+              style={{ fontFamily: 'Exo 2, sans-serif', fontSize: 'clamp(32px, 5vw, 56px)', fontWeight: 800, lineHeight: 1.1, letterSpacing: '-1px', margin: '0 0 20px' }}
             >
               <span style={{ color: '#fff' }}>Побей рекорд.</span><br />
               <span style={{ color: '#FFD000' }}>Попади в рейтинг.</span>
