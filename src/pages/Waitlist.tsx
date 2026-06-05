@@ -72,8 +72,9 @@ export function Waitlist() {
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
               <div style={{
                 display: 'inline-flex', alignItems: 'center',
-                background: 'rgba(255,208,0,0.1)', border: '1px solid rgba(255,208,0,0.2)',
+                background: 'rgba(255,208,0,0.1)', border: '1px solid rgba(255,208,0,0.25)',
                 borderRadius: 100, padding: '5px 13px', marginBottom: 28,
+                boxShadow: '0 0 14px rgba(255,208,0,0.2), 0 0 4px rgba(255,208,0,0.15)',
               }}>
                 <span style={{ color: '#FFD000', fontSize: 11, fontWeight: 700, letterSpacing: 1 }}>РАННИЙ ДОСТУП · IOS</span>
               </div>
@@ -249,8 +250,9 @@ function Badge({ label }: { label: string }) {
   return (
     <div style={{
       display: 'inline-flex', alignItems: 'center',
-      background: 'rgba(255,208,0,0.1)', border: '1px solid rgba(255,208,0,0.2)',
+      background: 'rgba(255,208,0,0.1)', border: '1px solid rgba(255,208,0,0.25)',
       borderRadius: 100, padding: '5px 13px', marginBottom: 4,
+      boxShadow: '0 0 14px rgba(255,208,0,0.2), 0 0 4px rgba(255,208,0,0.15)',
     }}>
       <span style={{ color: '#FFD000', fontSize: 11, fontWeight: 700, letterSpacing: 1 }}>{label}</span>
     </div>
