@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import { motion } from 'motion/react'
 import { Navbar } from '../components/Navbar'
 import { PhoneMockup } from '../components/PhoneMockup'
 import { StepCard } from '../components/StepCard'
 import { FeatureCard } from '../components/FeatureCard'
+import { Footer } from '../components/Footer'
+import { Star, Users, User, DollarSign, Zap, TrendingUp } from 'lucide-react'
 
 const navLinks = [
   { label: 'Как работает батл', href: '#how' },
@@ -20,12 +21,12 @@ const battleSteps = [
 ]
 
 const benefits = [
-  { icon: '⭐', title: 'Новый формат контента', description: 'Не пост, а интерактив: аудитория участвует, а не пролистывает.' },
-  { icon: '👥', title: 'Глубокая вовлечённость', description: 'Подписчики возвращаются, чтобы подняться в твоём лидерборде.' },
-  { icon: '👤', title: 'Именной батл', description: 'Батл носит твоё имя — это узнаваемый формат и личный бренд.' },
-  { icon: '💰', title: 'Монетизация с реальных действий', description: 'Доход не за просмотры, а за реальные действия пользователей.' },
-  { icon: '⚡', title: 'Статус раннего партнёра', description: 'Первая волна получает приоритет, поддержку и лучшие условия.' },
-  { icon: '📈', title: 'Растущая аудитория', description: 'Каждая попытка подписчика — это новый виток охвата для тебя.' },
+  { icon: <Star size={22} strokeWidth={2} color="#FFD000" />, title: 'Новый формат контента', description: 'Не пост, а интерактив: аудитория участвует, а не пролистывает.' },
+  { icon: <Users size={22} strokeWidth={2} color="#FFD000" />, title: 'Глубокая вовлечённость', description: 'Подписчики возвращаются, чтобы подняться в твоём лидерборде.' },
+  { icon: <User size={22} strokeWidth={2} color="#FFD000" />, title: 'Именной батл', description: 'Батл носит твоё имя — это узнаваемый формат и личный бренд.' },
+  { icon: <DollarSign size={22} strokeWidth={2} color="#FFD000" />, title: 'Монетизация с реальных действий', description: 'Доход не за просмотры, а за реальные действия пользователей.' },
+  { icon: <Zap size={22} strokeWidth={2} color="#FFD000" />, title: 'Статус раннего партнёра', description: 'Первая волна получает приоритет, поддержку и лучшие условия.' },
+  { icon: <TrendingUp size={22} strokeWidth={2} color="#FFD000" />, title: 'Растущая аудитория', description: 'Каждая попытка подписчика — это новый виток охвата для тебя.' },
 ]
 
 const goldGradient = 'linear-gradient(137deg, #FFD000 0%, #FF9D3C 100%)'
@@ -173,7 +174,7 @@ export function Bloggers() {
             Выгоды для блогера
           </h2>
         </motion.div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 16 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 16 }}>
           {benefits.map((b, i) => (
             <FeatureCard key={b.title} icon={b.icon} title={b.title} description={b.description} gradient={goldGradient} delay={i * 0.07} />
           ))}
@@ -184,23 +185,24 @@ export function Bloggers() {
       <section style={sectionStyle}>
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
           <div style={{
-            background: '#16161E', borderRadius: 20, padding: '32px 28px',
-            border: '1px solid rgba(255,255,255,0.07)', marginBottom: 16, maxWidth: 700,
+            background: '#16161E', borderRadius: 20, padding: '36px 40px',
+            border: '1px solid rgba(255,255,255,0.07)', marginBottom: 20,
+            display: 'flex', justifyContent: 'center',
           }}>
-            <div style={{ display: 'flex', gap: 0, flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: 0, width: '100%', maxWidth: 640 }}>
               {[
                 { value: '50 слотов', label: 'в мире, в первой волне', color: '#FFD000' },
                 { value: '8–10', label: 'креаторов на страну', color: '#fff' },
                 { value: '14 дней', label: 'и приём закрываем', color: '#EF4444' },
               ].map((stat, i) => (
                 <div key={stat.value} style={{
-                  flex: '1 1 140px', textAlign: 'center', padding: '0 20px',
+                  flex: '1 1 0', textAlign: 'center', padding: '0 24px',
                   borderRight: i < 2 ? '1px solid rgba(255,255,255,0.08)' : 'none',
                 }}>
-                  <div style={{ fontFamily: 'Unbounded, sans-serif', fontSize: 'clamp(22px, 4vw, 36px)', fontWeight: 800, color: stat.color, marginBottom: 6 }}>
+                  <div style={{ fontFamily: 'Unbounded, sans-serif', fontSize: 'clamp(24px, 3vw, 40px)', fontWeight: 900, color: stat.color, marginBottom: 8 }}>
                     {stat.value}
                   </div>
-                  <div style={{ color: '#6B7280', fontSize: 12 }}>{stat.label}</div>
+                  <div style={{ color: '#6B7280', fontSize: 13 }}>{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -216,7 +218,7 @@ export function Bloggers() {
       </section>
 
       {/* FORM */}
-      <section id="form" style={{ ...sectionStyle, paddingBottom: 120 }}>
+      <section id="form" style={{ ...sectionStyle, paddingBottom: 80 }}>
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}
           style={{ maxWidth: 640, margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: 32 }}>
@@ -237,10 +239,7 @@ export function Bloggers() {
                 <div style={{ color: '#fff', fontSize: 20, fontWeight: 800, fontFamily: 'Unbounded, sans-serif', marginBottom: 8 }}>
                   Заявка принята!
                 </div>
-                <div style={{ color: '#9CA3AF', fontSize: 14, marginBottom: 8 }}>
-                  Мы свяжемся с тобой в течение 14 дней.
-                </div>
-                <div style={{ color: '#FFD000', fontSize: 13 }}>Следи за уведомлениями.</div>
+                <div style={{ color: '#9CA3AF', fontSize: 14 }}>Мы свяжемся с тобой в течение 14 дней.</div>
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
@@ -295,6 +294,7 @@ export function Bloggers() {
                     rows={3}
                     style={{ ...inputStyle, resize: 'vertical' }}
                   />
+                  <p style={{ color: '#4B5563', fontSize: 12, marginTop: 6 }}>Необязательно — но помогает нам быстрее подобрать формат.</p>
                 </div>
 
                 <button type="submit" style={{
@@ -305,7 +305,7 @@ export function Bloggers() {
                   Отправить заявку
                 </button>
                 <p style={{ color: '#4B5563', fontSize: 12, margin: 0 }}>
-                  Отправляя заявку, ты соглашаешься, что мы свяжемся с тобой по указанному контакту.
+                  Отправляя заявку, ты соглашаешься, что мы свяжемся с тобой по указанному контакту. Это прототип — данные сохраняются только в этом браузере.
                 </p>
               </form>
             )}
@@ -313,9 +313,7 @@ export function Bloggers() {
         </motion.div>
       </section>
 
-      <footer style={{ borderTop: '1px solid rgba(255,255,255,0.06)', padding: '24px', textAlign: 'center' }}>
-        <Link to="/" style={{ color: '#4B5563', fontSize: 13, textDecoration: 'none' }}>← Recordgram</Link>
-      </footer>
+      <Footer />
     </div>
   )
 }
@@ -343,6 +341,5 @@ const inputStyle: React.CSSProperties = {
 }
 
 const selectStyle: React.CSSProperties = {
-  ...inputStyle,
-  appearance: 'none', cursor: 'pointer',
+  ...inputStyle, appearance: 'none', cursor: 'pointer',
 }

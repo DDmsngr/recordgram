@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import { motion } from 'motion/react'
 import { Navbar } from '../components/Navbar'
 import { PhoneMockup } from '../components/PhoneMockup'
 import { StepCard } from '../components/StepCard'
 import { RecordCard } from '../components/RecordCard'
+import { Footer } from '../components/Footer'
 
 const navLinks = [
   { label: 'Как это работает', href: '#how' },
@@ -240,9 +240,7 @@ export function Waitlist() {
         </motion.div>
       </section>
 
-      <footer style={{ borderTop: '1px solid rgba(255,255,255,0.06)', padding: '24px', textAlign: 'center' }}>
-        <Link to="/" style={{ color: '#4B5563', fontSize: 13, textDecoration: 'none' }}>← Recordgram</Link>
-      </footer>
+      <Footer />
     </div>
   )
 }

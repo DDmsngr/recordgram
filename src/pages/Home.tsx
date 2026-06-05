@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'motion/react'
 import { Navbar } from '../components/Navbar'
+import { Footer } from '../components/Footer'
 
 const navLinks = [
   { label: 'Для блогеров', href: '/bloggers' },
@@ -148,6 +149,7 @@ export function Home() {
           </motion.div>
         </div>
       </main>
+      <Footer />
     </div>
   )
 }
