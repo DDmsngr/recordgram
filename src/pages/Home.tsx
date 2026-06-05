@@ -39,7 +39,7 @@ export function Home() {
               display: 'inline-flex', alignItems: 'center', gap: 6,
               background: 'rgba(255,208,0,0.1)', border: '1px solid rgba(255,208,0,0.25)',
               borderRadius: 100, padding: '6px 14px', marginBottom: 32,
-              boxShadow: '0 0 14px rgba(255,208,0,0.2), 0 0 4px rgba(255,208,0,0.15)',
+              boxShadow: '0 0 0 1px rgba(255,208,0,0.3), 0 0 16px rgba(255,208,0,0.4), 0 0 40px rgba(255,208,0,0.15)',
             }}>
               <span style={{ color: '#FFD000', fontSize: 11, fontWeight: 700, letterSpacing: 1.2 }}>
                 RECORDGRAM · AI · IOS
