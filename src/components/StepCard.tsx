@@ -25,7 +25,7 @@ export function StepCard({ number, title, description, delay = 0 }: StepCardProp
       }}
     >
       <span style={{
-        fontFamily: 'Russo One, sans-serif',
+        fontFamily: 'Exo 2, sans-serif',
         color: '#FFD000',
         fontSize: 28,
         fontWeight: 700,

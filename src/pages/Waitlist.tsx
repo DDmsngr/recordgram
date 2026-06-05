@@ -83,7 +83,7 @@ export function Waitlist() {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              style={{ fontFamily: 'Russo One, sans-serif', fontSize: 'clamp(32px, 5vw, 56px)', fontWeight: 900, lineHeight: 1.1, letterSpacing: '-1px', margin: '0 0 20px' }}
+              style={{ fontFamily: 'Exo 2, sans-serif', fontSize: 'clamp(32px, 5vw, 56px)', fontWeight: 900, lineHeight: 1.1, letterSpacing: '-1px', margin: '0 0 20px' }}
             >
               <span style={{ color: '#fff' }}>Побей рекорд.</span><br />
               <span style={{ color: '#FFD000' }}>Попади в рейтинг.</span>
@@ -147,7 +147,7 @@ export function Waitlist() {
       <section id="how" style={sectionStyle}>
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
           <Badge label="4 ПРОСТЫХ ШАГА" />
-          <h2 style={{ fontFamily: 'Russo One, sans-serif', fontSize: 'clamp(24px, 4vw, 40px)', fontWeight: 800, margin: '12px 0 40px', color: '#fff' }}>
+          <h2 style={{ fontFamily: 'Exo 2, sans-serif', fontSize: 'clamp(24px, 4vw, 40px)', fontWeight: 800, margin: '12px 0 40px', color: '#fff' }}>
             Как это работает
           </h2>
         </motion.div>
@@ -160,7 +160,7 @@ export function Waitlist() {
       <section id="records" style={sectionStyle}>
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
           <Badge label="ПРИМЕРЫ РЕКОРДОВ" />
-          <h2 style={{ fontFamily: 'Russo One, sans-serif', fontSize: 'clamp(24px, 4vw, 40px)', fontWeight: 800, margin: '12px 0 8px', color: '#fff' }}>
+          <h2 style={{ fontFamily: 'Exo 2, sans-serif', fontSize: 'clamp(24px, 4vw, 40px)', fontWeight: 800, margin: '12px 0 8px', color: '#fff' }}>
             Что можно побить
           </h2>
           <p style={{ color: '#6B7280', fontSize: 14, marginBottom: 36 }}>
@@ -175,7 +175,7 @@ export function Waitlist() {
       {/* REFERRAL */}
       <section style={sectionStyle}>
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
-          <h2 style={{ fontFamily: 'Russo One, sans-serif', fontSize: 'clamp(22px, 4vw, 38px)', fontWeight: 800, margin: '0 0 40px', color: '#fff' }}>
+          <h2 style={{ fontFamily: 'Exo 2, sans-serif', fontSize: 'clamp(22px, 4vw, 38px)', fontWeight: 800, margin: '0 0 40px', color: '#fff' }}>
             Поднимайся в очереди быстрее
           </h2>
         </motion.div>
@@ -189,7 +189,7 @@ export function Waitlist() {
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}
           style={{ maxWidth: 560, margin: '0 auto', textAlign: 'center' }}>
           <Badge label="ЛИСТ ОЖИДАНИЯ" />
-          <h2 style={{ fontFamily: 'Russo One, sans-serif', fontSize: 'clamp(24px, 4vw, 40px)', fontWeight: 800, margin: '12px 0 8px', color: '#fff' }}>
+          <h2 style={{ fontFamily: 'Exo 2, sans-serif', fontSize: 'clamp(24px, 4vw, 40px)', fontWeight: 800, margin: '12px 0 8px', color: '#fff' }}>
             Встать в очередь
           </h2>
           <p style={{ color: '#6B7280', fontSize: 14, marginBottom: 32 }}>Открытый ранний доступ.</p>
@@ -202,7 +202,7 @@ export function Waitlist() {
               <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.4 }}
                 style={{ padding: '20px 0', textAlign: 'center' }}>
                 <div style={{ fontSize: 40, marginBottom: 16 }}>🎉</div>
-                <div style={{ color: '#fff', fontSize: 20, fontWeight: 800, fontFamily: 'Russo One, sans-serif', marginBottom: 8 }}>
+                <div style={{ color: '#fff', fontSize: 20, fontWeight: 800, fontFamily: 'Exo 2, sans-serif', marginBottom: 8 }}>
                   Ты в очереди!
                 </div>
                 <div style={{ color: '#FFD000', fontSize: 18, fontWeight: 700, marginBottom: 12 }}>Твоя позиция: #247</div>
